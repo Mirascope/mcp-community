@@ -174,7 +174,12 @@ cython_debug/
 
 node_modules
 .next
+!docs/lib
 
 # Claude
 
 CLAUDE.md
+
+# Mac
+
+.DS_Store
