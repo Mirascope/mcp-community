@@ -1,0 +1,7 @@
+[project]
+name = "mcp-community"
+version = "0.0.0"
+description = "Model Context Protocol Community"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
