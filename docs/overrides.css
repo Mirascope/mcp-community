@@ -1,0 +1,4 @@
+/* Hide self-hosting from main menu */
+.nextra-nav-container > nav > div > a[href="/self-hosting"] {
+  display: none !important;
+}

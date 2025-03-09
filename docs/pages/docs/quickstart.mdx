@@ -1,0 +1,37 @@
+# MCP Community Quickstart
+
+```python
+import asyncio
+
+from mcp_community import SimpleMCP
+
+app = SimpleMCP("calculator")
+
+
+@app.tool()
+def add(a: int, b: int) -> int:
+    """Add two numbers together."""
+    return a + b
+
+
+@app.tool()
+def subtract(a: int, b: int) -> int:
+    """Subtract two numbers."""
+    return a - b
+
+
+@app.tool()
+def multiply(a: int, b: int) -> int:
+    """Multiply two numbers."""
+    return a * b
+
+
+@app.tool()
+def divide(a: int, b: int) -> float:
+    """Divide two numbers."""
+    return a / b
+
+
+if __name__ == "__main__":
+    asyncio.run(app.run())
+```

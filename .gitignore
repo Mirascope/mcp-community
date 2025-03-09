@@ -169,3 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Nextra
+
+node_modules
+
+# Claude
+
+CLAUDE.md
