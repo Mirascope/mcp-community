@@ -154,9 +154,9 @@ export const Waitlist = () => {
       </div>
       {isClient && success && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/50 dark:bg-black/70 z-50">
-          <div className="bg-background p-6 rounded-lg shadow-lg max-w-md w-full border border-input">
-            <Alert className="border-green-200 dark:border-green-800 bg-green-50/90 dark:bg-green-950/30 text-green-800 dark:text-green-300">
-              <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />
+          <div className="bg-[hsl(10,30%,98%)] dark:bg-[hsl(10,15%,12%)] p-6 rounded-lg shadow-lg max-w-md w-full border border-input">
+            <Alert className="border-[hsl(142,30%,85%)] dark:border-[hsl(142,40%,25%)] bg-[hsl(142,60%,95%)] dark:bg-[hsl(142,60%,15%)] text-[hsl(142,60%,30%)] dark:text-[hsl(142,60%,75%)]">
+              <CheckCircle2 className="h-5 w-5 text-[hsl(142,60%,35%)] dark:text-[hsl(142,60%,60%)]" />
               <AlertTitle>Success!</AlertTitle>
               <AlertDescription>
                 Thank you for subscribing to our newsletter! You'll receive
