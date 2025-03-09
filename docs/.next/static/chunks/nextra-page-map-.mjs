@@ -70,4 +70,11 @@ export const pageMap = [{
       "sidebarTitle": "Index"
     }
   }]
+}, {
+  name: "waitlist",
+  route: "/waitlist",
+  frontMatter: {
+    "title": "MCP Community Waitlist",
+    "description": "Join the waitlist to be the first to know when the MCP Community is open for registration."
+  }
 }];

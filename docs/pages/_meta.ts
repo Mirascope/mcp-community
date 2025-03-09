@@ -16,4 +16,8 @@ export default {
       type: 'page',
       title: 'Self Hosting'
     },
+    "waitlist": {
+      type: 'page',
+      title: 'Waitlist',
+    }
 }
