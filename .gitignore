@@ -173,6 +173,7 @@ cython_debug/
 # Nextra
 
 node_modules
+.next
 
 # Claude
 
