@@ -5,3 +5,7 @@ description = "Model Context Protocol Community"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
