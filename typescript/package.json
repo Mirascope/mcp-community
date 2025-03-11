@@ -1,7 +1,7 @@
 {
   "name": "mcp-community",
   "version": "0.0.0",
-  "description": "Easily implement, deploy, and use MCP servers",
+  "description": "Easily run, deploy, and connect to MCP servers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
