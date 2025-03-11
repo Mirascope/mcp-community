@@ -1,6 +1,6 @@
 [project]
 name = "mcp-community"
-version = "0.0.2"
+version = "0.0.3"
 description = "Easily run, deploy, and connect to MCP servers"
 readme = "README.md"
 license = { file = "LICENSE" }
