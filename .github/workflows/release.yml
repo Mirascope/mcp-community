@@ -77,7 +77,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: typescript
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build package
         working-directory: typescript
