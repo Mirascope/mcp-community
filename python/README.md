@@ -61,6 +61,13 @@ async def run() -> None:
 asyncio.run(run())
 ```
 
+## Usage
+
+MCP Community provides two methods:
+
+- `run_mcp`: runs an MCP server as an SSE application (accepts `Server` or `FastMCP`)
+- `mcp_client`: connects to the SSE endpoint for an MCP server
+
 ## Hosted Servers
 
 Coming soon...

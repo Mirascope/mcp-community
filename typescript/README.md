@@ -1,3 +1,3 @@
-# (TypeScript) Model Context Protocol Community
+# Model Context Protocol Community
 
 Coming soon...
