@@ -1,0 +1,22 @@
+{
+  "name": "mcp-community",
+  "version": "0.0.0",
+  "description": "Your package description",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
