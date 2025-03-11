@@ -1,0 +1,1 @@
+"""The `mcp-community` CLI."""

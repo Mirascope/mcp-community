@@ -23,6 +23,16 @@ First, install the package:
 pip install mcp-community
 ```
 
+Now chat with a bot that can search the web:
+
+```bash
+mc bot --servers duckduckgo
+```
+
+Pretty cool, right?
+
+### Running Community Servers
+
 Next, try running the `CalculatorMCP` server:
 
 ```python
@@ -33,6 +43,8 @@ run_mcp(CalculatorMCP)
 ```
 
 By default, this will be running at `http://0.0.0.0:8000/sse`.
+
+### MCP Client
 
 Now, connect to the server and run some calculations in a separate process:
 
@@ -63,10 +75,37 @@ asyncio.run(run())
 
 ## Usage
 
+### Library Usage
+
 MCP Community provides two methods:
 
 - `run_mcp`: runs an MCP server as an SSE application (accepts `Server` or `FastMCP`)
 - `mcp_client`: connects to the SSE endpoint for an MCP server
+
+### CLI Usage
+
+MCP Community also includes a command-line interface for quickly interacting with MCP servers:
+
+```bash
+# Install with pip
+pip install mcp-community
+
+# Start a chat with a bot that can use a calculator
+mc bot
+
+# Start a chat with a bot that can search the web
+mc bot --servers calculator
+
+# Start a chat with a bot that can use multiple servers
+mc bot --servers calculator,duckduckgo
+
+# See all available options
+mc bot --help
+```
+
+The CLI uses Anthropic's Claude to provide a natural language interface to the MCP servers.
+
+We are planning on updating this to be provider-agnostic once Mirascope implements their MCP Client.
 
 ## Hosted Servers
 
