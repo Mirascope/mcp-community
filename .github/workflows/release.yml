@@ -76,15 +76,15 @@ jobs:
           version: 8
 
       - name: Install dependencies
-        working-directory: ./javascript
+        working-directory: typescript
         run: pnpm install --frozen-lockfile
 
       - name: Build package
-        working-directory: ./javascript
+        working-directory: typescript
         run: pnpm run build
 
       - name: Publish to NPM
-        working-directory: ./javascript
+        working-directory: typescript
         run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
