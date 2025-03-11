@@ -33,6 +33,15 @@ dependencies = [
     "uvicorn>=0.29.0",
 ]
 
+[project.optional-dependencies]
+duckduckgo = [
+    "beautifulsoup4>=4.13.3",
+    "duckduckgo-search>=7.5.1",
+    "pillow>=11.1.0",
+    "requests>=2.32.3",
+]
+examples = ["anthropic>=0.49.0"]
+
 [project.urls]
 Homepage = "https://mcp.mirascope.com"
 Documentation = "https://mcp.mirascope.com/docs"

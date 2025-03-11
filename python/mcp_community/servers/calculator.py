@@ -2,35 +2,36 @@
 
 from mcp.server import FastMCP
 
-# Create a FastMCP server with calculator tools
-CalculatorMCP = FastMCP("Calculator")
+mcp = FastMCP("Calculator")
 
 
-@CalculatorMCP.tool()
+@mcp.tool()
 def add(a: int, b: int) -> int:
     """Add two numbers."""
     return a + b
 
 
-@CalculatorMCP.tool()
+@mcp.tool()
 def subtract(a: int, b: int) -> int:
     """Subtract two numbers."""
     return a - b
 
 
-@CalculatorMCP.tool()
+@mcp.tool()
 def multiply(a: int, b: int) -> int:
     """Multiply two numbers."""
     return a * b
 
 
-@CalculatorMCP.tool()
+@mcp.tool()
 def divide(a: int, b: int) -> float | None:
     """Divide two numbers."""
     if b == 0:
         return None
     return a / b
 
+
+CalculatorMCP = mcp
 
 __all__ = ["CalculatorMCP"]
 
