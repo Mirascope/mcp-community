@@ -2,3 +2,4 @@
 
 - [`CalculatorMCP`](./calculator.py)
 - [`DuckDuckGoMCP`](./duckduckgo.py)
+- [`FileSystemMCP`](./filesystem.py)
