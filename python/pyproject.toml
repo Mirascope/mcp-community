@@ -43,7 +43,7 @@ duckduckgo = [
     "pillow>=11.1.0",
     "requests>=2.32.3",
 ]
-
+google-calendar = ["google-api-python-client>=2.164.0", "google-auth>=2.38.0"]
 [project.urls]
 Homepage = "https://mcp.mirascope.com"
 Documentation = "https://mcp.mirascope.com/docs"
