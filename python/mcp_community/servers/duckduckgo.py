@@ -159,4 +159,4 @@ __all__ = ["DuckDuckGoMCP"]
 if __name__ == "__main__":
     from mcp_community import run_mcp
 
-    run_mcp(DuckDuckGoMCP, port=8089)
+    run_mcp(DuckDuckGoMCP)
