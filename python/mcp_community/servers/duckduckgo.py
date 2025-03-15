@@ -26,19 +26,19 @@ def text_search(query: str, max_results: int = 5) -> str:
     """
 
     try:
-        results = DDGS().text(query, max_results=max_results)
+        results = DDGS().text(keywords=query, max_results=max_results)
         return "\n\n".join(
             inspect.cleandoc(
                 f"""
-                Title: {result["title"]}
-                URL: {result["href"]}
-                Snippet: {result["body"]}
+                Title: {result.get('title', 'N/A')}
+                URL: {result.get('href', 'N/A')}
+                Snippet: {result.get('body', 'N/A')}
                 """
             )
             for result in results
         )
     except Exception as e:
-        return f"{type(e)}: Failed to search the web for text"
+        return f"{type(e).__name__}: {str(e)} - Failed to search the web for text"
 
 
 @mcp.tool()
@@ -57,18 +57,18 @@ def news_search(query: str, max_results: int = 5) -> str:
         return "\n\n".join(
             inspect.cleandoc(
                 f"""
-                Date: {result["date"]}
-                Title: {result["title"]}
-                URL: {result["href"]}
-                Image: {result["image"]}
-                Source: {result["source"]}
-                Snippet: {result["body"]}\
+                Date: {result.get('date', 'N/A')}
+                Title: {result.get('title', 'N/A')}
+                URL: {result.get('url', 'N/A')}
+                Image: {result.get('image', 'N/A')}
+                Source: {result.get('source', 'N/A')}
+                Snippet: {result.get('body', 'N/A')}\
                 """
             )
             for result in results
         )
     except Exception as e:
-        return f"{type(e)}: Failed to search the web for news"
+        return f"{type(e).__name__}: {str(e)} - Failed to search the web for news"
 
 
 @mcp.tool()
@@ -84,7 +84,7 @@ def image_search(
     """Returns the results of an image web search query."""
     try:
         results = DDGS().images(
-            query,
+            keywords=query,
             size=size,
             color=color,
             type_image=type_image,
@@ -95,19 +95,20 @@ def image_search(
         return "\n\n".join(
             inspect.cleandoc(
                 f"""
-                Title: {result["title"]}
-                Image: {result["image"]}
-                URL: {result["url"]}
-                Height: {result["height"]}
-                Width: {result["width"]}
-                Source: {result["source"]}
+                Title: {result.get('title', 'N/A')}
+                Image: {result.get('image', 'N/A')}
+                URL: {result.get('url', 'N/A')}
+                Height: {result.get('height', 'N/A')}
+                Width: {result.get('width', 'N/A')}
+                Source: {result.get('source', 'N/A')}
+                Thumbnail: {result.get('thumbnail', 'N/A')}
                 """
             )
             for result in results
         )
 
     except Exception as e:
-        return f"{type(e)}: Failed to search the web for images"
+        return f"{type(e).__name__}: {str(e)} - Failed to search the web for images"
 
 
 @mcp.tool()
